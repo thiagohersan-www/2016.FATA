@@ -41,7 +41,7 @@ theme = "hugo-creative-theme"
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
 		slogan     = "FATA 2016"
-		subtitle   = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis nesciunt consequatur ut nihil voluptatem fugiat eos eveniet alias in veniam?"
+		subtitle   = "2 Julho de 2016 - 10 Outubro 2016<br />Atibaia, SP"
 		buttonText = "Find out more"
 
 
