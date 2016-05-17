@@ -1,8 +1,10 @@
 modalID: 1
 title: About
-#date: 2014-07-05
 img: 1.jpg
-#client: Start Bootstrap
-#clientLink: "#"
 name: FATA2016
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim aliquid dicta ullam in repellendus amet perspiciatis adipisci architecto obcaecati sit voluptas ipsam, deleniti neque placeat tenetur cum tempore velit. <iframe src="https://player.vimeo.com/video/165095890?portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+description: "
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim aliquid dicta ullam in repellendus amet perspiciatis adipisci architecto obcaecati sit voluptas ipsam, deleniti neque placeat tenetur cum tempore velit.
+
+<iframe src='https://player.vimeo.com/video/165095890?portrait=0' width='640' height='360' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+"
