@@ -1,5 +1,5 @@
 {{ "<!-- Portfolio Modals -->" | safeHTML }}
-{{ range .Site.Data.projects }}
+{{ range .Site.Data }}
 <div class="portfolio-modal modal fade" id="portfolioModal{{ .modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -13,9 +13,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
                         <h2>{{ .title }}</h2>
-                        {{ if ne .title "About" }}
                         <h3>{{ .name }}</h3>
-                        {{ end }}
                         <hr class="star-primary">
                         <img src="img/portfolio/{{ .img }}" class="img-responsive img-centered" alt="">
                         <p>{{ .description | markdownify }}</p>
