@@ -1,8 +1,8 @@
 <section class="no-padding" id="portfolio">
     <div class="container-fluid">
         <div class="row no-gutter">
-            {{ range .Site.Data.projects }}
-            {{ if ne .title "About" }}
+            {{ range .Site.Data }}
+            {{ if eq .category "project" }}
             <div class="col-lg-4 col-sm-6">
                 <a href="#portfolioModal{{ .modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
                     <img src="img/portfolio/{{ .img }}" class="img-responsive" alt="">
