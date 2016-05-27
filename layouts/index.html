@@ -3,6 +3,20 @@
     <head>
         {{ partial "head.html" . }}
     </head>
+    <script>
+        window.onload = function() {
+            var url = window.location.href;
+            if (url.indexOf("#modal") > -1){
+                var els = document.getElementsByTagName("a");
+                for (var i = 0, l = els.length; i < l; i++) {
+                    var el = els[i];
+                    if (el.href === url) {
+                        el.click();
+                    }
+                }
+            }
+        }
+    </script>
     <body id="page-top">
         {{ partial "nav.html" . }}
         {{ partial "hero.html" . }}
