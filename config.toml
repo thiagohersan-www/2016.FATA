@@ -1,6 +1,6 @@
 baseurl = "http://tgh.flab.space/FATA2016/"
 languageCode = "en-us"
-title = "FATA2016"
+title = "Festival de Arte e Tecnologia de Atibaia 2016"
 theme = "hugo-creative-theme"
 
 [params]
@@ -16,7 +16,7 @@ theme = "hugo-creative-theme"
 
 	# Navigation
 	[params.navigation]
-		brand = "FATA2016"
+		brand = "⬆"
 
 		[params.navigation.links]
 			about    = "Festival"
