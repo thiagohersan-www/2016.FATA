@@ -5,78 +5,32 @@ theme = "hugo-creative-theme"
 
 [params]
 
-	# You can use Markdown syntax for urls [text](//url.to/source) for
-	# most longer texts.
+	# You can use Markdown syntax for urls [text](//url.to/source)
 
-	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
-	# for more icons. The icons are represented by their corresponding
-	# CSS class.
-
-	# All projects of the portfolio are defined in their own files.
-	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
-	# folder into the 'data' directory at the root of this Hugo site.
-	# For more informtion take a look at the README.
-
-	# To provide some metadata for search engines feel free to add a few
-    # information about you and your website.
-	name = "Your name"
-	description = "Your description"
+	# To provide some metadata for search engines
+	name = "Festival de Arte e Tecnologia de Atibaia"
+	description = "Festival de Arte e Tecnologia de Atibaia - Incubadora de Artistas"
 
 	# The path must be relative to the static folder
 	favicon = "beijo.png"
-
 
 	# Navigation
 	[params.navigation]
 		brand = "FATA2016"
 
 		[params.navigation.links]
-			about     = "About"
+			about    = "About"
 			projects = "Projetos"
-			artists = "Participantes"
-			#services  = "Services"
-			#portfolio = "Portfolio"
-			#contact   = "Contact"
+			artists  = "Participantes"
 
 
 	# Hero section
 	[params.hero]
-		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		# To change the background of the hero section, replace './static/img/header.jpg'
 		slogan     = "FATA 2016"
 		subtitle   = "2 Julho de 2016 - 10 Outubro 2016<br />Atibaia, SP"
 		buttonText = "Find out more"
 
-
-	# About section
-	[params.about]
-		headline    = "We've got what you need!"
-		description = "[Lorem](//google.com) ipsum dolor sit amet, consectetur adipisicing elit. Praesentium similique eos eligendi error veritatis harum, sed aliquid totam, quam minus neque enim est architecto, ad. Maiores, aliquid, vitae!"
-		buttonText  = "Get started!"
-
-
-	# Service section
-	[params.services]
-		headline = "At your service"
-
-        [[params.services.list]]
-            icon = "fa-diamond"
-            title = "Sturdy Templates"
-            description = "Our templates are updated regularly so they don't break."
-
-        [[params.services.list]]
-			icon = "fa-paper-plane"
-			title = "Ready to Ship"
-			description = "You can use this theme as is, or you can make changes!"
-
-		[[params.services.list]]
-            icon = "fa-newspaper-o"
-            title = "Up to Date"
-            description = "We update dependencies to keep things fresh."
-
-        [[params.services.list]]
-            icon = "fa-heart"
-            title = "Made with Love"
-            description = "You have to make your websites with love these days!"
 
 
     # Portfolio modals
@@ -89,14 +43,3 @@ theme = "hugo-creative-theme"
     # Aside section
 	[params.aside]
 		headline = "Get the Creative Theme for Hugo"
-
-		[params.aside.button]
-			text = "Download now"
-			link = "//github.com/digitalcraftsman/hugo-creative-theme"
-
-	# Contact section
-	[params.contact]
-		headline = "Let's Get In Touch!"
-		description = "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!"
-		phone = "123-456-6789"
-		email = "feedback@startbootstrap.com"
