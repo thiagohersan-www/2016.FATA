@@ -19,7 +19,7 @@ theme = "hugo-creative-theme"
 		brand = "FATA2016"
 
 		[params.navigation.links]
-			about    = "About"
+			about    = "Festival"
 			projects = "Projetos"
 			artists  = "Participantes"
 
@@ -39,7 +39,3 @@ theme = "hugo-creative-theme"
         date = "Date"
         category = "Category"
         buttonText = "Close"
-
-    # Aside section
-	[params.aside]
-		headline = "Get the Creative Theme for Hugo"
