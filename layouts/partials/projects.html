@@ -4,7 +4,7 @@
             {{ range .Site.Data }}
             {{ if eq .category "project" }}
             <div class="col-lg-4 col-sm-6">
-                <a href="#portfolioModal{{ .modalID }}" class="portfolio-box portfolio-link" data-toggle="modal">
+                <a href="#modal{{ replace .name " " "" }}{{ replace (replace .title " " "") ":" "" }}" class="portfolio-box portfolio-link" data-toggle="modal">
                     <img src="img/{{ .img }}" class="img-responsive" alt="">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
