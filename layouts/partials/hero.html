@@ -2,7 +2,7 @@
 <header>
     <div class="header-content" id="hero">
         <div class="header-content-inner">
-            <h1>{{ with .Site.Params.hero.slogan }}{{ . | markdownify  }}{{ end }}</h1>
+            <h2>{{ with .Site.Params.hero.slogan }}{{ . | markdownify  }}{{ end }}</h2>
             <hr>
             <p>{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</p>
         </div>

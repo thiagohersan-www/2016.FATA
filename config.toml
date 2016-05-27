@@ -8,8 +8,8 @@ theme = "hugo-creative-theme"
 	# You can use Markdown syntax for urls [text](//url.to/source)
 
 	# To provide some metadata for search engines
-	name = "Festival de Arte e Tecnologia de Atibaia"
-	description = "Festival de Arte e Tecnologia de Atibaia - Incubadora de Artistas"
+	name = "Festival de Arte e Tecnologia de Atibaia 2016"
+	description = "Festival de Arte e Tecnologia de Atibaia 2016 - Incubadora de Artistas"
 
 	# The path must be relative to the static folder
 	favicon = "beijo.png"
@@ -27,8 +27,8 @@ theme = "hugo-creative-theme"
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace './static/img/header.jpg'
-		slogan     = "FATA 2016"
-		subtitle   = "2 Julho de 2016 - 10 Outubro 2016<br />Atibaia, SP"
+		slogan     = "Festival de Arte e Tecnologia"
+		subtitle   = "2 Julho - 10 Outubro 2016<br />Atibaia, SP"
 		buttonText = "Find out more"
 
 
