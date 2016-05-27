@@ -32,6 +32,8 @@ theme = "hugo-creative-theme"
 
 		[params.navigation.links]
 			about     = "About"
+			projects = "Projetos"
+			artists = "Participantes"
 			#services  = "Services"
 			#portfolio = "Portfolio"
 			#contact   = "Contact"
