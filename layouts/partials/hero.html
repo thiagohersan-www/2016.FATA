@@ -1,6 +1,6 @@
 {{ "<!-- HEADER -->" | safeHTML }}
 <header>
-    <div class="header-content">
+    <div class="header-content" id="hero">
         <div class="header-content-inner">
             <h1>{{ with .Site.Params.hero.slogan }}{{ . | markdownify  }}{{ end }}</h1>
             <hr>
