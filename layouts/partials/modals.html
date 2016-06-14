@@ -1,6 +1,6 @@
 {{ "<!-- Portfolio Modals -->" | safeHTML }}
 {{ range .Site.Data }}
-<div class="portfolio-modal modal fade" id="modal{{ replace (replace (replace (replace .name "ç" "c") ":" "") "," "") " " "" }}{{ replace (replace .title " " "") ":" "" }}" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="modal{{ replace (replace (replace (replace .name "ç" "c") ":" "") "," "") " " "" }}{{ replace (replace (replace (replace (replace .title "#" "") "ç" "c") "í" "i") " " "") ":" "" }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
