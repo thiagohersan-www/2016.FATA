@@ -16,7 +16,7 @@
                         <h3>{{ .name }}</h3>
                         <hr class="star-primary">
                         <!-- <img src="img/{{ .img }}" class="img-responsive img-centered" alt=""> -->
-                        <p>{{ .description | markdownify }}</p>
+                        <p style='text-align: left;'>{{ .description | markdownify }}</p>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $.Site.Params.portfolio.modal.buttonText }}{{.}}{{ end }}</button>
                     </div>
                 </div>
