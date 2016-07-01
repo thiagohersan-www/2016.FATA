@@ -22,6 +22,7 @@ theme = "hugo-creative-theme"
 			about    = "Festival"
 			projects = "Projetos"
 			artists  = "Participantes"
+            catalog = "Catálogo"
 
 
 	# Hero section
