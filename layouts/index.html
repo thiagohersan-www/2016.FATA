@@ -2,9 +2,11 @@
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
     <head>
         {{ partial "head.html" . }}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     </head>
     <script>
         window.onload = function() {
+            // for permanent urls
             var url = window.location.href;
             if (url.indexOf("#modal") > -1){
                 var els = document.getElementsByTagName("a");
@@ -15,6 +17,18 @@
                     }
                 }
             }
+
+            // slider for text
+            $('#about-more').click(function() {
+                console.log('ssss');
+                $header = $(this);
+                $content = $("#about-all");
+                $content.slideToggle(500, function() {
+                    $header.text(function () {
+                        return $content.is(":visible")?('↖'):('↘');
+                    });
+                });
+            });
         }
     </script>
     <body id="page-top">
