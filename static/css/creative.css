@@ -46,6 +46,30 @@ a:focus {
     color: rgb(52, 52, 52);
 }
 
+.about-text {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#about-intro {
+    float: left;
+    clear: both;
+}
+#about-more {
+    float: right;
+    clear: both;
+    cursor: pointer;
+    font-size: 28px;
+}
+#about-all {
+    display: none;
+    clear: both;
+}
+
 h1,
 h2,
 h3,
