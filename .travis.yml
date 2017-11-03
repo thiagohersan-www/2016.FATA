@@ -6,7 +6,7 @@ rvm:
 install:
   - sudo apt-get install snapd
   - sudo snap install hugo
-  - sudo gem install jekyll
+  - gem install jekyll
   - git clone git@github.com:thiagohersan/atibaia.alab.space.git
 
 script:
