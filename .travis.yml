@@ -1,7 +1,7 @@
 language: ruby
 
 install:
-  - sudo apt-get install hugo
+  - snap install hugo
   - gem install jekyll
   - git clone git@github.com:thiagohersan/atibaia.alab.space.git
 
