@@ -1,0 +1,18 @@
+language: ruby
+
+addons:
+  apt:
+    packages:
+      - hugo
+
+install:
+  - gem install jekyll
+  - git clone git@github.com:thiagohersan/atibaia.alab.space.git
+
+script:
+    - cd atibaia.alab.space
+    - ./deploy.sh
+
+after_script:
+  - cd ..
+  - rm -rf atibaia.alab.space
