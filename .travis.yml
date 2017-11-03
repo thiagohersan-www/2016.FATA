@@ -1,5 +1,8 @@
 language: ruby
 
+rvm:
+  - 2.2.4
+
 install:
   - sudo apt-get install snapd
   - sudo snap install hugo
