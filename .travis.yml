@@ -8,9 +8,12 @@ branches:
     - master
 
 install:
-  - sudo apt-get install snapd
-  - sudo snap install hugo
-  - PATH=/snap/bin:$PATH
+  - echo "sudo apt-get install snapd"
+  - echo "sudo snap install hugo"
+  - echo "PATH=/snap/bin:$PATH"
+  - mkdir -p hugo/bin
+  - wget -c https://github.com/gohugoio/hugo/releases/download/v0.50/hugo_0.50_Linux-64bit.tar.gz -O - | tar -xz -C ./hugo/bin
+  - PATH=./hugo/bin:$PATH
   - gem install jekyll
 
 script:
