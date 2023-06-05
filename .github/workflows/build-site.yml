@@ -34,3 +34,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
+
+      - name: Dispatch
+        run: |
+          curl -H "Accept: application/vnd.github.everest-preview+json" \
+          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+          --request POST \
+          --data '{"event_type": "build-site"}' \
+          https://api.github.com/repos/thiagohersan-www/atibaia.alab.space/dispatches
