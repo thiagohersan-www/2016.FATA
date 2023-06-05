@@ -37,10 +37,13 @@ jobs:
 
       - name: Dispatch
         run: |
-          curl -L \
-          -X POST \
-          -H "Accept: application/vnd.github+json" \
-          -H "Authorization: Bearer ${{ secrets.PUSH_TOKEN }}"\
-          -H "X-GitHub-Api-Version: 2022-11-28" \
+          curl -X POST \
+          -u "${{ secrets.PUSH_TOKEN }}" \
+          -H "Accept: application/vnd.github.everest-preview+json" \
+          -H "Content-Type: application/json" \
           https://api.github.com/repos/thiagohersan-www/atibaia.alab.space/dispatches \
-          -d '{"event_type":"build-site"}'
+          --data '{"event_type":"build-site"}'
+
+# curl -X POST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/YOURNAME/APPLICATION_NAME/dispatches --data '{"event_type": "build_application"}'
+# curl -X POST -u "${{ secrets.PAT_USERNAME}}:${{secrets.PAT_TOKEN}}" -H "Accept: application/vnd.github.everest-preview+json" -H "Content-Type: application/json" https://api.github.com/repos/YOURNAME/APPLICATION_NAME/actions/workflows/build.yaml/dispatches --data '{"ref": "master"}'
+# curl -X POST -u "${{ secrets.PUSH_TOKEN }}"                         -H 'Accept: application/vnd.github.everest-preview+json'                                     https://api.github.com/repos/:userName/:repoName/dispatches --data '{"event_type": "Trigger Workflow" }'
