@@ -1,5 +1,4 @@
 baseurl = "//atibaia.alab.space/2016/"
-#baseurl = "http://localhost:8000/2016/"
 languageCode = "en-us"
 title = "Festival de Arte e Tecnologia de Atibaia 2016"
 theme = "hugo-creative-theme"
