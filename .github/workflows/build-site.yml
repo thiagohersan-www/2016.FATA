@@ -37,8 +37,10 @@ jobs:
 
       - name: Dispatch
         run: |
-          curl -H "Accept: application/vnd.github.everest-preview+json" \
-          -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-          --request POST \
-          --data '{"event_type": "build-site"}' \
-          https://api.github.com/repos/thiagohersan-www/atibaia.alab.space/dispatches
+          curl -L \
+          -X POST \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}"\
+          -H "X-GitHub-Api-Version: 2022-11-28" \
+          https://api.github.com/repos/thiagohersan-www/atibaia.alab.space/dispatches \
+          -d '{"event_type":"build-site"}'
