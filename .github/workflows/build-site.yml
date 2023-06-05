@@ -1,0 +1,36 @@
+name: build site
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Install Hugo
+        run: |
+          wget https://github.com/gohugoio/hugo/releases/download/v0.19/hugo_0.19-64bit.deb
+          sudo dpkg -i hugo_0.19-64bit.deb
+
+      - name: Build
+        run: |
+          if [ ! -d themes ]; then
+            mkdir themes
+            pushd themes
+            git clone https://github.com/digitalcraftsman/hugo-creative-theme.git
+            popd
+          fi
+          hugo -d public
+
+      - name: Push
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: built
